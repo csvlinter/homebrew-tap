@@ -51,6 +51,7 @@ For comprehensive usage instructions and examples, visit the [csvlinter document
 ## 🔗 Related Projects
 
 - **[csvlinter](https://github.com/csvlinter/csvlinter)** - Main project repository
+- **[csvlinter VSCode Extension](https://github.com/csvlinter/vscode-extension)** - Visual Studio Code extension for csvlinter
 - **[csvlinter-action](https://github.com/csvlinter/csvlinter-action)** - GitHub Action for CI/CD pipelines
 
 ## License
