@@ -26,7 +26,7 @@ brew install csvlinter
 brew upgrade csvlinter
 ```
 
-## 🛠️ Usage
+## Usage
 
 Once installed, you can start validating CSV files immediately:
 
@@ -48,7 +48,7 @@ For comprehensive usage instructions and examples, visit the [csvlinter document
 - macOS 10.12+ or Linux
 - Homebrew package manager
 
-## 🔗 Related Projects
+## Related Projects
 
 - **[csvlinter](https://github.com/csvlinter/csvlinter)** - Main project repository
 - **[csvlinter VSCode Extension](https://github.com/csvlinter/vscode-extension)** - Visual Studio Code extension for csvlinter
