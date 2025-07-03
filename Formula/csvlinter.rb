@@ -5,20 +5,20 @@
 class Csvlinter < Formula
   desc "Streaming CSV validator with JSON-Schema support"
   homepage "https://github.com/csvlinter/csvlinter"
-  version "1.6.0"
+  version "1.7.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/csvlinter/csvlinter/releases/download/v1.6.0/csvlinter-darwin-amd64.tar.gz"
-      sha256 "af95104bae7cf1a97348e247bd6ef72d7a879a17917dfb3378f3b595d3784da6"
+      url "https://github.com/csvlinter/csvlinter/releases/download/v1.7.0/csvlinter-darwin-amd64.tar.gz"
+      sha256 "2ede1e7dbb14097c646abe70c8f0e0f06cfeed81a9454d0dd46898d45409c9c3"
 
       def install
         bin.install "csvlinter"
       end
     end
     on_arm do
-      url "https://github.com/csvlinter/csvlinter/releases/download/v1.6.0/csvlinter-darwin-arm64.tar.gz"
-      sha256 "b4b0fda8dbd386f9b4a076f032f58aab1aa386fc45a6210135832a10102cdb43"
+      url "https://github.com/csvlinter/csvlinter/releases/download/v1.7.0/csvlinter-darwin-arm64.tar.gz"
+      sha256 "90b789f3a38f95c58720c069933d0b76d9e6409dec2f44280a75aa894885d538"
 
       def install
         bin.install "csvlinter"
@@ -29,8 +29,8 @@ class Csvlinter < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/csvlinter/csvlinter/releases/download/v1.6.0/csvlinter-linux-amd64.tar.gz"
-        sha256 "f7fe525b0abe917ee7d67ac64701f27c2c1d3d4195e04a47827ba4c6764c0e55"
+        url "https://github.com/csvlinter/csvlinter/releases/download/v1.7.0/csvlinter-linux-amd64.tar.gz"
+        sha256 "720a246547d1b4ac3957b8a38df88969a56763b56a6f6960f6064be1567fe5bf"
 
         def install
           bin.install "csvlinter"
@@ -39,8 +39,8 @@ class Csvlinter < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/csvlinter/csvlinter/releases/download/v1.6.0/csvlinter-linux-arm64.tar.gz"
-        sha256 "4651543e1c33ad751d9edf9376972115823638cce3ca712adc852a87125cfa10"
+        url "https://github.com/csvlinter/csvlinter/releases/download/v1.7.0/csvlinter-linux-arm64.tar.gz"
+        sha256 "eaf32c24cb4b6c79aff0b764aa7cd4bc4b4f90a92117abf5822d985024deb70b"
 
         def install
           bin.install "csvlinter"
