@@ -5,20 +5,20 @@
 class Csvlinter < Formula
   desc "Streaming CSV validator with JSON-Schema support"
   homepage "https://github.com/csvlinter/csvlinter"
-  version "1.8.2"
+  version "1.8.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.2/csvlinter-darwin-amd64.tar.gz"
-      sha256 "b2ee5412b21629417ec8b40342a875ec1e071bd432a04defc8f083958fad4f14"
+      url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.3/csvlinter-darwin-amd64.tar.gz"
+      sha256 "7eab57441bc4baaa9cbfff19f4765a49f6194b8d4838bdc80fb22f6b81ccba86"
 
       def install
         bin.install "csvlinter"
       end
     end
     on_arm do
-      url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.2/csvlinter-darwin-arm64.tar.gz"
-      sha256 "4100e8ca99e2387b8b65905f0484bf42ccb13fd8b3f0a8d02b00c5c50b09f45f"
+      url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.3/csvlinter-darwin-arm64.tar.gz"
+      sha256 "9eaa2669fb05de207bc7293e633e4db973909024480e666618fb178757776f7a"
 
       def install
         bin.install "csvlinter"
@@ -29,8 +29,8 @@ class Csvlinter < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.2/csvlinter-linux-amd64.tar.gz"
-        sha256 "7a692a8c498ebad4ff11d4c0c3218358ea3216d2f12599ea6acd8301224adb17"
+        url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.3/csvlinter-linux-amd64.tar.gz"
+        sha256 "9bbb22868e31759a118ae8e1ecee15d140ccaa4a2ae6f690959e3c67a8b95e73"
 
         def install
           bin.install "csvlinter"
@@ -39,8 +39,8 @@ class Csvlinter < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.2/csvlinter-linux-arm64.tar.gz"
-        sha256 "13bac6121901d1085c433519fac8b6371dc7d82fc2a2c542a8498e864ea17e5e"
+        url "https://github.com/csvlinter/csvlinter/releases/download/v1.8.3/csvlinter-linux-arm64.tar.gz"
+        sha256 "074f17d0e0c09948947f82ea0dc519a2c48b8ca7371680c32cf845169dd61545"
 
         def install
           bin.install "csvlinter"
@@ -51,7 +51,7 @@ class Csvlinter < Formula
 
   test do
     (testpath/"bad.csv").write("col\nbad")
-    output = shell_output("#{bin}/csvlinter bad.csv", 1)
+    output = shell_output("#{bin}/csvlinter validate bad.csv", 1)
     assert_match "Row 2", output
   end
 end
